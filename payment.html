@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: DarkCyan;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+</style>
+
+</head>
+<body bgcolor="#E6E6FA">
+
+<ul>
+  <li><a class="active" href="home.html">Home</a></li>
+  <li><a href="home.html">Logout</a></li>
+  <li><a href="registration.html">Registration</a></li>
+  <li><a href="booking.html">Booking</a></li>
+  <li><a href="cancellation.html">Cancellation</a></li>
+  <li><a href="history.html">Travel history</a></li>
+  <li><a href="booking.html">Availability check</a></li>
+  <li><a href="about.html">About</a></li>
+</ul>
+
+<h2><center>PAYMENT FORM</h2><center>
+<form action="payment.php" method="post">
+<left><label><b>cardtype:</b></label>
+<br>
+<form>
+  <input type="radio" name="cardtype" value="debit" checked>debit<br>
+  <input type="radio" name="cardtype" value="credit">credit<br> 
+  <input type="radio" name="cardtype" value="visacard">visatype<br> 
+ </form> 
+ <br><br><br>  
+<left><label><b>cardnumber</b></label>
+<input type="text" name="departure"></left><br><br>
+<left><label><b>promocode</b></label>
+<input type="text" name="promocode"></left><br><br>
+<br>
+<input type="submit" name="submit" value="submit">
+
+</form>
+</body>
+</html>
